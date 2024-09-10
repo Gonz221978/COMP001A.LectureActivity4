@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <!-- unordered list with 3 items -->
+             <ul>
+                <li><a href="index.html" target="self">Home</a></li>
+                <li><a href="tables.html" target="self">Tables</a></li>
+                <li><a href="forms.html" target="self">Forms</a></li>
+                <li><a href="media.html" target="self">Media</a></li>
+             </ul>
+         </nav>
+         <h1>
+            Welcome to My Website
+         </h1>
+    </header>
+    <main>
+        <!-- Div container for building tables with fixed size -->
+        <div id="table1">
+            <!-- Table with fixed size -->
+            <table style="width: 1000px;">
+                <caption>Table with a absolute width values</caption>
+                <!-- Table header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                 </thead>
+                 <!-- Table body -->
+                <tbody>
+                    <!-- Table row for the body -->
+                    <tr>
+                        <!-- Table data cell -->
+                        <td>Data 1.1</td>
+                        <td>Data 1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+         <!-- Div container for building responsive tables -->
+         <div id="table2">
+            <!-- Responsive table that adjusts its width based on its parent container's width -->
+            <table style="width: 100%;">
+                <caption>Responsive table using relative width values</caption>
+                <!-- Table header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                 </thead>
+                 <!-- Table body -->
+                <tbody>
+                    <!-- Table row for the body -->
+                    <tr>
+                        <!-- Table data cell -->
+                        <td>Data 1.1</td>
+                        <td>Data 1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+          <!-- Div container for building responsive tables with merged cells -->
+          <div id="table3">
+            <!-- Responsive table with merged cells -->
+            <table style="width: 100%;">
+                <caption>Responsive table with merged cells</caption>
+                <!-- Table header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                    <tr>
+                        <th rowspan="2">Header 1</th> <!-- Header cell that spans two rows vertically -->
+                        <th colspan="2">Header 2</th> <!-- Header cell that spans two columns horizontally -->
+                    </tr>
+                    <tr>
+                        <th>Sub-header 1</th>
+                        <th>Sub-header 2</th>
+                    </tr>
+                 </thead>
+                 <!-- Table body -->
+                <tbody>
+                    <!-- Table row for the body -->
+                    <tr>
+                        <!-- Table data cell -->
+                        <td>Data 1.1</td>
+                        <td>Data 1.2</td>
+                        <td>Data 1.3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                        <td>Data 2.3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                        <td>Data 3.3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024 Ethen Gonzalez. |  <a href="https://github.com/Gonz221978" target="self">Github</a></p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
